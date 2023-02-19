@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ironman Tracker</title>
+    <!-- <link rel="stylesheet" href="nontail.css"> -->
+    <link rel="stylesheet" href="/newtitles/output.css">
+</head>
+
+<body class="px-6 md:px-24 xl:px-52">
+  <!-- Round and score counters in top left corner -->
+  <div class="" id= "gameTitle">
+    <img class="h-64 mx-auto" src="assets/images/Fire_Emblem_Engage_Logo.png" alt="FEE logo"></img>
+    <h1 class="titleTEXT1 mt-6 text-center text-4xl font-bold">Ironman Tracker</h1>
+  </div>
+
+  <div class="border-8 border-black p-4 rounded" id="scoreBox">
+    <h3 class="text-xl font-semibold text-center">Chapter <span id="chapterNumber"></span></h3>
+    <div class="relative h-16 w-128" id="buttons">
+      <button class="absolute left-0 border-4 border-blue-900 bg-gray-400" id="Win"><h4 class="p-4 text-xl text-blue-700">Survived the Chapter</h4></button>
+      <button class="absolute right-0 border-4 border-red-900 bg-gray-400" id="Win"><h4 class="p-4 text-xl text-red-700">Game Over</h4></button>
+    </div>
+  </div>
+
+  <!-- Alive Units -->
+  <div id="aliveUnits" class="bg-blue-200">
+    <h1 class="titleTEXT1 text-left text-4x1 font-bold">Alive: </h1>
+    <button class=""><img class="h-32" src="assets/images/MAlearFE17Portrait.png" alt="Alear"></img>
+
+  </div>
+
+  <!-- Dead Units -->
+  <div id="aliveUnits" class="bg-red-200">
+    <h1 class="titleTEXT1 text-left text-4x1 font-bold">Dead: </h1>
+    <button class=""><img class="h-32" src="assets/images/MAlearFE17Portrait.png" alt="Alear"></img>
+
+  </div>
+  <!-- Game history -->
+  <div id= "gameHistory">
+    <h2 class="footTEXT1 text-lg text-yellow-600">History: </h2>
+  </div>
+
+  <main class="border-8 border-black p-4 divide-y-4">
+    <!-- Inside main is where history will be generated -->
+  </main>
+
+  <!--  -->
+  <script type="module" src="game.js"></script>
+</body>
+
+</html>
